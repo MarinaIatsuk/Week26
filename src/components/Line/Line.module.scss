@@ -1,0 +1,21 @@
+
+    .table__line{
+        display: grid;
+        grid-template-columns: repeat(5,0.6fr);
+        background: linear-gradient( #f3dabd, #c5aa8b);
+        .table__number{
+            color: black;
+        }
+        .table__english{
+            color: black;
+        }
+        .table__transcription{
+            color: black;
+        }
+        .table__russian{
+            color: black;
+        }
+        .table__buttons{
+            color: black;
+        }
+    }

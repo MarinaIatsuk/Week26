@@ -1,0 +1,14 @@
+
+.table{
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-rows: repeat(auto-fill,35px);
+   
+    .table__head{
+        display: grid;
+        grid-template-columns: repeat(5,0.6fr);
+        font-weight: bolder;
+       grid-template-rows: repeat(1,30px);
+    }
+}
