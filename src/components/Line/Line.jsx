@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import style from './Line.module.scss';
 
-const Line = ({ id, english, transcription, russian }) => {
+const Line = ({ id, english, transcription, russian, deleteItem}) => {
   const [isEditing, setIsEditing] = useState(false); 
   const [editedEnglish, setEditedEnglish]=useState(english);
   const [editedTranscription, setEditedTranscription]=useState(transcription);
@@ -49,8 +49,8 @@ const Line = ({ id, english, transcription, russian }) => {
           <div className={style.table__transcription}>{transcription}</div>
           <div className={style.table__russian}>{russian}</div>
           <div className={style.table__buttons}>
-            <button onClick={editLine}>Редактировать</button>
-            <button>Удалить</button>
+            <button onClick={editLine}>Редактировать</button>/
+            <button onClick={deleteItem}>Удалить</button>
           </div>
         </>
       )}

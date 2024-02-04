@@ -16,8 +16,15 @@ export default function Games() {
             setCurrentIndex(currentIndex + 1);
         }
     }
+
+    const [learnedWords, setCount] = useState(0);
+    const addWord=()=>{
+        setCount(learnedWords+1);
+    }
+
   return (
-    <div className={style.cards}>
+    <div className={style.wrapper}>
+        <div className={style.cards}>
             <button onClick={goToPreviousCard} className={style.cards__button}>←</button>
                 <Cards
                     key={data[currentIndex].id}
@@ -26,9 +33,11 @@ export default function Games() {
                     russian={data[currentIndex].russian}
                     currentIndex={currentIndex}
                     setCurrentIndex={setCurrentIndex}
+                    addWord={()=>addWord()}
                 />
-                
-            <button onClick={goToNextCard}className={style.cards__button}>→</button>
+            <button onClick={goToNextCard} className={style.cards__button}>→</button>
+            </div>
+            <div className={style.cards__counter}>Изучено  {learnedWords}  слов </div>
             </div>
   )
 }

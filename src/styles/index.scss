@@ -21,10 +21,11 @@ body {
 a{
   color: rgba(66, 53, 53, 0.87);
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
+  
 }
 .active{
   color: rgba(129, 61, 61, 0.87);
-  text-decoration: underline;
+  text-decoration: none;
 }
 

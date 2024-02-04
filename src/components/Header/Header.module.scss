@@ -1,21 +1,24 @@
-.header{
+.header {
     width: 100%;
     position: fixed;
-  top: 0;
-padding-left: 50px;
-padding-top: 30px;
+    top: 0;
+    padding-left: 50px;
+    padding-top: 30px;
 
-    &__navigation{
+    &__navigation {
         display: flex;
         justify-content: flex-start;
-        gap: 10px;
-        &__navigationItem{
+        align-items: center;
+        gap: 20px;
+
+        &__navigationItem {
             font-size: medium;
             margin-right: 50px;
         }
     }
 }
-img{
-    height: 30px;
-    width: 30px;
+
+img {
+    height: 45px;
+    width: 50px;
 }
